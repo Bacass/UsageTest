@@ -43,6 +43,7 @@ public class MainActivity extends Activity {
 	}
 
 	private void sortUsageStats() {
+		// 필요없는 데이타는 삭제.
 		for (int i = 0; i < usageStats.size(); i++) {
 			if (usageStats.get(i).getTotalTimeInForeground() < 1000) {
 				usageStats.remove(i);
